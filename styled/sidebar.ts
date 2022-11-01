@@ -5,7 +5,7 @@ export const Sidebar = styled.div`
   color: ${(p) => p.theme.color2};
   max-width: 420px;
   width: 30%;
-  padding-top: 7%;
+  padding-top: 5%;
   padding-bottom: 9%;
 `
 
@@ -15,12 +15,12 @@ export const Profile = styled.div`
   padding: 0rem 1.5rem;
   display: flex;
   justify-content: center;
-  margin-bottom: 14%;
+  margin-bottom: 10%;
 
   & img {
     display: block;
-    width: 80%;
-    max-width: 15rem;
+    width: 60%;
+    max-width: 10rem;
     height: auto;
     border-radius: 50%;
     object-fit: cover;
@@ -58,7 +58,7 @@ export const SidebarBlock = styled.div<{ last?: boolean }>`
     padding: 0rem 1.1rem;
 
     li {
-      margin-bottom: 1.2rem;
+      margin-bottom: 0.8rem;
 
       &:last-child {
         margin-bottom: 0rem;

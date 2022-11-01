@@ -75,7 +75,28 @@ export const PositionWrapper = styled.h3`
 `
 
 export const AboutWrapper = styled.div`
+  margin-bottom: 1rem;
+  text-indent: 1rem;
+`
+
+export const Examples = styled.div`
   margin-bottom: 4rem;
+
+  & p {
+    font-size: 1.4rem;
+    font-weight: 600;
+    font-style: italic;
+  }
+
+  & a {
+    display: block;
+    margin-bottom: 0.4rem;
+    font-weight: 700;
+
+    &:hover {
+      color: rebeccapurple;
+    }
+  }
 `
 
 export const ExperiencesWrapper = styled.div`
@@ -120,5 +141,18 @@ export const ExperienceWrapper = styled.div`
     border: 2px solid #323B4C;
     background-color: #ffffff;
     transform: translateX(-50%);
+  }
+`
+
+export const FooterLinks = styled.ul`
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 60px;
+  flex-wrap: wrap;
+  list-style: none;
+
+  & a:hover {
+    text-decoration: underline;
   }
 `
