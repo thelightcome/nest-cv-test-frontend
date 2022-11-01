@@ -1,6 +1,25 @@
 import '../styles/globals.css'
 import type { AppProps } from 'next/app'
+import { Provider } from 'react-redux'
+import { ThemeProvider } from 'styled-components'
+import { wrapper } from "../store/store"
 
-export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+import { ThemeMode } from '../styled/themes'
+
+import MainLayout from '../components/layouts/MainLayout'
+
+function App({ Component, ...rest }: AppProps) {
+  const { store, props } = wrapper.useWrappedStore(rest);
+  const { pageProps } = props;
+  return (
+    <Provider store={store}>
+      <ThemeProvider theme={ThemeMode.light}>
+        <MainLayout>
+          <Component {...pageProps} />
+        </MainLayout>
+      </ThemeProvider>
+    </Provider>
+  )
 }
+
+export default App

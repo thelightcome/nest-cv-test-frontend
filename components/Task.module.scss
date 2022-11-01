@@ -1,0 +1,60 @@
+.task {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 12px;
+  padding: 10px 15px;
+  border-bottom: 1px solid #000;
+
+  &__text {
+    font-size: 1.3rem;
+    flex-grow: 1;
+    outline: none;
+  }
+
+  &__update {
+    background: transparent;
+    border: 1px solid green;
+    color: green;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+      background: green;
+      color: #ffffff;
+    }
+  }
+
+  &__save {
+    background: transparent;
+    border: 1px solid green;
+    color: green;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+      background: green;
+      color: #ffffff;
+    }
+  }
+
+  &__delete {
+    background: transparent;
+    border: 1px solid red;
+    color: red;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+      background: red;
+      color: #ffffff;
+    }
+  }
+}
