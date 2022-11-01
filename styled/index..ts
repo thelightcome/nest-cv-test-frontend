@@ -1,4 +1,4 @@
-import { Wrapper, Container, Title1, ContactLink, Content, NameWrapper, PositionWrapper, AboutWrapper, ExperiencesWrapper, ExperienceWrapper } from './common'
+import { Wrapper, Container, Title1, ContactLink, Content, NameWrapper, PositionWrapper, AboutWrapper, ExperiencesWrapper, ExperienceWrapper } from './common.'
 import { Sidebar, Profile, SidebarContent, SidebarBlock } from './sidebar'
 
 export {

@@ -12,13 +12,13 @@ function App({ Component, ...rest }: AppProps) {
   const { store, props } = wrapper.useWrappedStore(rest);
   const { pageProps } = props;
   return (
-    <Provider store={store}>
-      <ThemeProvider theme={ThemeMode.light}>
+    <ThemeProvider theme={ThemeMode.light}>
+      <Provider store={store}>
         <MainLayout>
           <Component {...pageProps} />
         </MainLayout>
-      </ThemeProvider>
-    </Provider>
+      </Provider>
+    </ThemeProvider>
   )
 }
 

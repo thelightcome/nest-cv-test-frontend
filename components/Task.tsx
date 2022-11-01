@@ -11,7 +11,7 @@ function Task({ task }: { task: { _id: string, text: string } }) {
   const [updateFlag, setUpdateFlag] = useState(false)
   const { deleteTask, updateTask } = useActions()
 
-  const editableDiv = useRef(null);
+  const editableDiv = useRef<HTMLDivElement>(null);
 
   async function deleteClick() {
     if (loading) return
@@ -32,7 +32,9 @@ function Task({ task }: { task: { _id: string, text: string } }) {
     if (loading) return
     setLoading(true)
 
-    const data = await TaskApi.update(task._id, editableDiv.current.textContent)
+    if (editableDiv.current === null) return;
+
+    const data = await TaskApi.update(task._id, editableDiv.current.textContent || '')
 
     updateTask(data)
 

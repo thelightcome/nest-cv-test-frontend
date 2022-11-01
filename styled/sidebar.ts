@@ -31,7 +31,7 @@ export const SidebarContent = styled.div`
   padding-left: 17%;
 `
 
-export const SidebarBlock = styled.div`
+export const SidebarBlock = styled.div<{ last?: boolean }>`
   margin-bottom: ${(p) => p.last ? '0px' : '40px'};
 
   & > div {

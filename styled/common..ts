@@ -28,7 +28,7 @@ export const DefaultLink = styled.a`
   color: inherit;
 `
 
-export const Title1 = styled.div`
+export const Title1 = styled.div<{ color?: string, mb?: string }>`
   font-size: 1.8rem;
   font-weight: bold;
   line-height: 1;
