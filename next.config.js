@@ -3,7 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   env: {
-    HOST: 'https://nest-test-backend.herokuapp.com'
+    HOST: 'https://nest-cv-test-backend.herokuapp.com'
   },
   compiler: {
     styledComponents: true
