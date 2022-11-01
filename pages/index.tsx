@@ -51,7 +51,6 @@ export default function Home() {
               <Title1>Language</Title1>
               <h4>Kazakh</h4>
               <h4>Russian</h4>
-              <h4>English</h4>
             </SidebarBlock>
           </SidebarContent>
         </Sidebar>
